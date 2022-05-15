@@ -7,7 +7,7 @@
     "test": "",
     "start": "node server.js",
     "watch": "nodemon",
-    "seed": "node config/seeds.js"
+    "seed": "node seeders/seeds.js"
   },
   "author": "Brenton Weaver",
   "license": "MIT",

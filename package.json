@@ -1,0 +1,26 @@
+{
+  "name": "hustle_2point0",
+  "version": "2.0.0",
+  "description": "Get filming faster",
+  "main": "back/server.js",
+  "scripts": {
+    "start": "cd back && npm start && cd ../front && npm start",
+    "develop": "concurrently \"cd back && npm run watch\" \"cd front && npm start\"",
+    "install": "cd back && npm i && cd ../front && npm i",
+    "seed": "cd back && npm run seed",
+    "build": "cd front && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brento20/hustle_2point0.git"
+  },
+  "author": "Brenton Weaver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brento20/hustle_2point0/issues"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  },
+  "homepage": "https://github.com/Brento20/hustle_2point0#readme"
+}
