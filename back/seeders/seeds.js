@@ -1,4 +1,4 @@
-const hustleDB = require('./config/connection');
+const hustleDB = require("../config/connection");
 const { User, Product, Category } = require('../models');
 
 hustleDB.once('open', async () => {
@@ -38,7 +38,7 @@ hustleDB.once('open', async () => {
       name: "APUTURE LS1200D PRO LIGHT STORM",
       category: categories[0]._id,
       description:
-      "LS 1S use aero-aluminum to achieve the best balance performance of heat, density, strength, workability, etc. So that the function parameters can get a perfectshow. Delicate design and elaborate production combine for a robust but exquisite housing that can fulfill low forward heat of the fixture.",
+      "LS 1S use aero-aluminum to achieve the best balance performance of heat, density, strength, workability, etc. So that the function parameters can get a perfect show. Delicate design and elaborate production combine for a robust but exquisite housing that can fulfill low forward heat of the fixture.",
       image: "LS1200D.jpg",
       price: 5149,
       quantity: 20
