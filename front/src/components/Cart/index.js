@@ -71,7 +71,7 @@ const Cart = () => {
   }
 
   return (
-    <div className="cart">
+    <div className="cart" style={{background: 'white', borderBottomLeftRadius: '15px', padding: '15px'}}>
       <div className="close" onClick={toggleCart}>
         [close]
       </div>
@@ -93,10 +93,7 @@ const Cart = () => {
           </div>
         </div>
       ) : (
-        <h3>
-          <span role="img" aria-label="shocked">
-            😱
-          </span>
+        <h3 style={{fontSize: '16px'}}>
           You haven't added anything to your cart yet!
         </h3>
       )}

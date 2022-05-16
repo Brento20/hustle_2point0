@@ -4,6 +4,7 @@ import { pluralize } from "../../utils/helpers"
 import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import {DISCOUNT_PRICE} from '../../constants';
 
 function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
@@ -15,6 +16,8 @@ function ProductItem(item) {
     price,
     quantity
   } = item;
+
+  
 
   const { cart } = state
 
@@ -33,26 +36,29 @@ function ProductItem(item) {
     } else {
       dispatch({
         type: ADD_TO_CART,
-        product: { ...item, purchaseQuantity: 1 }
+        product: { ...item, purchaseQuantity: 1, price: Math.floor(item.price * DISCOUNT_PRICE) }
       });
       idbPromise('cart', 'put', { ...item, purchaseQuantity: 1 });
     }
   }
 
   return (
-    <div className="card px-1 py-1">
-      <Link to={`/products/${_id}`}>
-        <img
+    <div className="card px-1 py-1" style={{marginBottom: '20px'}}>
+      <Link style={{ textDecoration: 'none', color: "black", paddingLeft: '15px'}} to={`/products/${_id}`}>
+        <img id="prodImage"
           alt={name}
           src={`/images/${image}`}
         />
-        <p>{name}</p>
+        <h3>{name}</h3>
       </Link>
-      <div>
+      <div style={{paddingLeft: '15px'}}>
         <div>{quantity} {pluralize("item", quantity)} in stock</div>
-        <span>${price}</span>
+        <span><b>${Math.floor(price * DISCOUNT_PRICE)}</b> instead of ${price}</span>
+        <br />
+        <br />
       </div>
-      <button onClick={addToCart}>Add to cart</button>
+      <button id="tag" onClick={addToCart}>Hire Now</button>
+      <br />
     </div>
   );
 }

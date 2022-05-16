@@ -9,6 +9,7 @@ import {
 import { setContext } from '@apollo/client/link/context';
 
 import Home from './pages/Home';
+import About from './pages/About';
 import Detail from './pages/Detail';
 import NoMatch from './pages/NoMatch';
 import Login from './pages/Login';
@@ -19,7 +20,7 @@ import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
 
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: 'http://localhost:3001/graphql',
 });
 
 const authLink = setContext((_, { headers }) => {
@@ -44,10 +45,18 @@ function App() {
         <div>
           <StoreProvider>
             <Nav />
+            <br />
+            <br />
+            <div>
+            <br /> 
             <Routes>
               <Route 
                 path="/" 
                 element={<Home />} 
+              />
+              <Route
+                path="/about"
+                element={<About />}
               />
               <Route 
                 path="/login" 
@@ -74,9 +83,14 @@ function App() {
                 element={<NoMatch />} 
               />
             </Routes>
+            <br />
+            </div>
           </StoreProvider>
         </div>
       </Router>
+      <footer style={{background: '#212229', color: 'gray', textAlign: 'center', fontSize: '9px', padding: '3px'}}>
+(C) Daddy Inc.
+      </footer>
     </ApolloProvider>
   );
 }

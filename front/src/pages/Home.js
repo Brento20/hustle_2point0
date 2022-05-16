@@ -5,8 +5,14 @@ import Cart from "../components/Cart";
 
 const Home = () => {
   return (
-    <div className="container">
-      <CategoryMenu />
+    <div className="container" >
+      <div style={{textAlign: 'center'}}>
+        <br />
+        <CategoryMenu />
+        <br />
+
+      </div>
+
       <ProductList />
       <Cart />
     </div>

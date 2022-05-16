@@ -30,7 +30,7 @@ function Success() {
   }, [addOrder]);
 
   return (
-    <div>
+    <div style={{background: 'white', padding: '32px', borderRadius: '5px'}}>
       <Jumbotron>
         <h1>Success!</h1>
         <h2>Thank you for your purchase!</h2>

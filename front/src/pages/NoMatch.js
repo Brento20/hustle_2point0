@@ -3,7 +3,7 @@ import Jumbotron from "../components/Jumbotron";
 
 const NoMatch = () => {
   return (
-    <div>
+    <div style={{background: 'white', padding: '32px', borderRadius: '5px'}}>
       <Jumbotron>
         <h1>404 Page Not Found</h1>
         <h1>

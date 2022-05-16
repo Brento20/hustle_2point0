@@ -3,6 +3,8 @@ const { User, Product, Category, Order } = require('../models');
 const { signToken } = require('../utils/auth');
 const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 
+const { DISCOUNT_PRICE } = require('../constants');
+
 const resolvers = {
     Query: {
         categories: async () => {
@@ -68,7 +70,7 @@ const resolvers = {
     
             const price = await stripe.prices.create({
                 product: product.id,
-                unit_amount: products[i].price * 100,
+                unit_amount: (Math.floor(products[i].price * DISCOUNT_PRICE)) * 100,
                 currency: 'usd',
             });
     

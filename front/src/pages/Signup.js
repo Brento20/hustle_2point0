@@ -31,7 +31,7 @@ function Signup(props) {
   };
 
   return (
-    <div className="container my-1">
+    <div className="container my-1" style={{background: 'white', padding: '32px', borderRadius: '5px'}}>
       <Link to="/login">← Go to Login</Link>
 
       <h2>Signup</h2>
