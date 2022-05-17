@@ -10,6 +10,7 @@ import { setContext } from '@apollo/client/link/context';
 
 import Home from './pages/Home';
 import About from './pages/About';
+import Social from  './pages/Social'
 import Detail from './pages/Detail';
 import NoMatch from './pages/NoMatch';
 import Login from './pages/Login';
@@ -18,6 +19,7 @@ import Nav from './components/Nav';
 import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
+import Footer from './components/Footer'
 
 const httpLink = createHttpLink({
   uri: 'http://localhost:3001/graphql',
@@ -74,6 +76,10 @@ function App() {
                 path="/orderHistory" 
                 element={<OrderHistory />} 
               />
+              <Route
+                path="/social"
+                element={<Social />}
+              />
               <Route 
                 path="/products/:id" 
                 element={<Detail />} 
@@ -88,9 +94,7 @@ function App() {
           </StoreProvider>
         </div>
       </Router>
-      <footer style={{background: '#212229', color: '#D3D3D3', textAlign: 'center', fontSize: '9px', padding: '3px'}}>
-(C) Brenton Weaver Designs Inc.
-      </footer>
+    <Footer />
     </ApolloProvider>
   );
 }
