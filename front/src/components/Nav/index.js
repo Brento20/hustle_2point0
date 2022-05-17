@@ -72,7 +72,7 @@ function Nav() {
       
         <h1>HUSTLE:</h1>
         
-        <h3> Lights | Camera | Action</h3>
+        <h4> Lights | Camera | Action</h4>
     </div>
 
     <div style={{
