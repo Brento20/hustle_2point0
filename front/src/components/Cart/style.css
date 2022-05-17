@@ -45,7 +45,7 @@
 }
 
 .cart-closed:hover {
-  transform: rotate(8deg);
+  transform: rotate(15deg);
 }
 
 .cart img {
@@ -73,3 +73,4 @@
     margin: 0 auto;
   }
 }
+

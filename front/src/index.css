@@ -4,9 +4,8 @@
 
 body {
   min-width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-image: url("../public/images/background1.jpeg");
-
 }
 
 #prodImage {
@@ -20,14 +19,14 @@ ul {
   text-decoration: none;
 }
 ul li {
-  text-decoration: none;
+  font-weight: 500;
   display: inline;
 
 }
 
 p {
   color: #000000;
-  font-family: 'Helvetica Neue', sans-serif; 
+  font-family: 'Montserrat', sans-serif; 
   font-size: 14px; 
   line-height: 24px; 
   margin: 0 0 24px; 
@@ -35,7 +34,23 @@ p {
   text-justify: inter-word
 }
 
+h1 {
+  color: transparent;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8rem;
+  font-kerning: 1;
+  background-image: url('./assets/assets.gif');
+  background-position: center;
+  background-size: 500px;
+  -webkit-background-clip: text;
+
+}
 h2 {
+  font-weight: 400;
+}
+
+h3 {
   font-weight: 100;
 }
 
@@ -53,3 +68,14 @@ h2 {
   border-radius: 35rem;
   cursor: pointer;
 };
+
+footer {
+  transform: skewY(1.5deg);
+  transform-origin: top left;
+  min-height: 150px;
+  margin-top: 50px;
+}
+
+footer p {
+  transform: skewY(1.5deg);
+}

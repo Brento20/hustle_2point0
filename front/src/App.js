@@ -88,8 +88,8 @@ function App() {
           </StoreProvider>
         </div>
       </Router>
-      <footer style={{background: '#212229', color: 'gray', textAlign: 'center', fontSize: '9px', padding: '3px'}}>
-(C) Daddy Inc.
+      <footer style={{background: '#212229', color: '#D3D3D3', textAlign: 'center', fontSize: '9px', padding: '3px'}}>
+(C) Brenton Weaver Designs Inc.
       </footer>
     </ApolloProvider>
   );

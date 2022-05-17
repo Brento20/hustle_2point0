@@ -55,18 +55,15 @@ function Nav() {
       <h1>
         <Link to="/" style={{ textDecoration: 'none', color: "black"}}>
         <header>    
-    <div id="logo" style={{
+    <div style={{
         width: "100%",
-        padding: "2.5em",
+        padding: "0.5em",
         margin:"auto",
     }}>
-        <h1 style={{
-            fontWeight: "700"
-        }}>HUSTLE UP:</h1>
+      
+        <h1>HUSTLE:</h1>
         
-        <h3 style={{
-            fontWeight:"100"
-        }}> Lights | Camera | Action</h3>
+        <h3> Lights | Camera | Action</h3>
     </div>
 
     <div style={{
