@@ -44,7 +44,7 @@ function CategoryMenu() {
   return (
     <div>
       {categories.map((item) => (
-        <button id="tag"
+        <button id="tag" className='btn btn-border-pop'
           key={item._id}
           onClick={() => {
             handleClick(item._id);

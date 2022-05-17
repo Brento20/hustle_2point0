@@ -22,7 +22,7 @@ function OrderHistory() {
         {user ? (
           <>
             <h2>
-              Order History for {user.firstName} {user.lastName}
+              Equipment on loan to {user.firstName} {user.lastName}
             </h2>
             {user.orders.length === 0 ? <>No past orders.</>:<></>}
             {user.orders.map((order) => (

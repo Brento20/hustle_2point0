@@ -11,12 +11,12 @@ const About = () => {
         <div>
             <h3> About Hustle: Film Faster </h3>
             <p> 
-                Hustle: Film first is the film and media branch of the Hustle group. 
+                Hustle: Film Faster is the film and media branch of the Hustle group. <br></br>
 
-                Set with the goal of getting a new generation of creatives and film makers the tools to make tomorrows cult classics, today.
-
-                Removing a substantial weight of the finical burden of production allows more space for humans in the process and eases the transition from self taught and university educated team members to their professional futures.
-
+                Set with the goal of getting a new generation of creatives and film makers the tools to make tomorrows cult classics, today.<br></br>
+                <br></br>
+                Removing a substantial weight of the finical burden of production allows more space for humans in the process and eases the transition from self taught and university educated team members to their professional futures.<br></br>
+                <br></br>
                 Future branches for Hustle will include:
 
                 Hustle: Medical Equipment Services

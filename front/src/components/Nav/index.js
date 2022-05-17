@@ -2,6 +2,11 @@ import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
 
+const linkStyle = {
+  textDecoration: 'none', 
+  color: "black", 
+  marginLeft: "1rem"
+}
 
 function Nav() {
 
@@ -10,18 +15,18 @@ function Nav() {
       return (
         <ul className="flex-row">
           <li className="mx-1">
-            <Link style={{ textDecoration: 'none', color: "black", marginLeft: "1rem"}} to="/orderHistory">
-              Order History
+            <Link style={{...linkStyle}} to="/orderHistory">
+              My Kit
             </Link>
           </li>
           <li className="mx-1">
-            <Link style={{ textDecoration: 'none', color: "black", marginLeft: "1rem"}} to="/about">
+            <Link style={{...linkStyle}} to="/about">
               About Hustle
             </Link>
           </li>
           <li className="mx-1">
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a style={{ textDecoration: 'none', color: "black", marginLeft: "1rem"}} href="/" onClick={() => Auth.logout()}>
+            <a style={{...linkStyle}} href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
           </li>
@@ -31,17 +36,17 @@ function Nav() {
       return (
         <ul>
           <li>
-            <Link style={{ textDecoration: 'none', color: "black", marginLeft: "1rem"}} to="/signup">
+            <Link style={{...linkStyle}} to="/signup">
               Signup
             </Link>
           </li>
           <li>
-            <Link style={{ textDecoration: 'none', color: "black", marginLeft: "1rem"}} to="/login">
+            <Link style={{...linkStyle}} to="/login">
               Login
             </Link>
           </li>
           <li>
-            <Link style={{ textDecoration: 'none', color: "black", marginLeft: "1rem"}} to="/about">
+            <Link style={{...linkStyle}} to="/about">
               About Hustle
             </Link>
           </li>
