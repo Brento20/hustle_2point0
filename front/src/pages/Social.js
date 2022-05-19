@@ -2,16 +2,10 @@ import React from "react";
 
 import Post1 from "../components/cards/card";
 import Post2 from "../components/cards/post2";
-
-// import { useQuery } from '@apollo/client';
-// import { QUERY_USER } from '../utils/queries';
+import Post3 from "../components/cards/post3";
 
 function Social() {
-    // const { data } = useQuery(QUERY_USER);
-    //     let user;
-    // if (data) {
-    //     user = data.user;
-    // }
+
     return (
     <div className="container" style={{
         backgroundColor: "white",
@@ -19,29 +13,29 @@ function Social() {
         borderRadius: '5px',
         filter: "drop-shadow(0 0 0.5rem black)"}} >
         
-        <p>
-        Hey ,
-        <br></br>
-        <br></br>
-        Check out some collaborative work in your area below!
-        </p>
-        <div className="container">
-            <div Style={{
+        <h2>
+        Check out collaborative projects in your area below!
+        </h2>
+        <div className="container" Style={{
                 height: "30px",
                 width: "80%",
                 borderRadius: "5px",
                 backgroundColor: "red",
                 display: "flex",
             }}>
-                <div Style={{
-                    alignItems: "flex-start",
-                }}>
-                <Post1 />
-                <Post2 />
+                <div id="cardsParent">
+                    <div id="cards">
+                        <Post1 />
+                    </div>
+                    <div id="cards">
+                        <Post2 />
+                    </div>
+                    <div id="cards">
+                        <Post3 />
+                    </div>
                 </div>
 
                 <div/>
-            </div>
         </div>
     </div>
     )
