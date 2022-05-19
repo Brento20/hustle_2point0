@@ -22,7 +22,10 @@ import OrderHistory from './pages/OrderHistory';
 import Footer from './components/Footer'
 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:3001/graphql',
+  uri:
+    window.location.hostname.indexOf("localhost") > -1
+      ? "http://localhost:3001/graphql"
+      : "/graphql",
 });
 
 const authLink = setContext((_, { headers }) => {
