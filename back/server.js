@@ -21,13 +21,17 @@ if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../front/build')));
 }
 
-app.get('/', async (req, res) => {
-    res.sendFile(path.join(__dirname, '../front/build/index.html'));
-});
+
 
 const runApolloServer = async (typeDefs, resolvers) => {
     await server.start();
     server.applyMiddleware({ app });
+    
+
+    app.get('/*', async (req, res) => {
+        res.sendFile(path.join(__dirname, '../front/build/index.html'));
+    });
+
     
     db.once('open', () => {
         app.listen(PORT, () => {
