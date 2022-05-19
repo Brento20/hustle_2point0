@@ -7,14 +7,16 @@ import linkedin from "../../assets/linkedin.png"
 function Footer() {
     return (
         <footer style={{
-            background: '#212229', 
+            background: '#252525de', 
             color: '#D3D3D3', 
             textAlign: 'center', 
             fontSize: '9px', 
             padding: '12px',
+            marginTop: '1000px',
+            position: 'sticky',
             bottom: '0',
             width: '100%',
-            height: '150px'}}>
+            height: '100px'}}>
         © Brenton Weaver Designs Inc.
         <br></br>
         <br></br>

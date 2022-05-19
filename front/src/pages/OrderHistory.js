@@ -16,7 +16,7 @@ function OrderHistory() {
 
   return (
     <>
-      <div className="container my-1" style={{background: 'white', padding: '32px', borderRadius: '5px'}}>
+      <div className="container my-1" style={{background: 'white', padding: '32px', borderRadius: '5px', filter: "drop-shadow(0 0 0.5rem black)"}}>
         <Link to="/">← Back to Products</Link>
 
         {user ? (

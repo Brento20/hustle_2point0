@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const linkStyle = {
   textDecoration: 'none', 
-  color: "black", 
-  marginLeft: "1rem"
+  color: "#e16c1e", 
+  marginLeft: "3rem"
 }
 
 function Nav() {
@@ -27,6 +27,11 @@ function Nav() {
           <li className="mx-1">
             <Link style={{...linkStyle}} to="/social">
               Get Gigs
+            </Link>
+          </li>
+          <li className="mx-1">
+            <Link style={{...linkStyle}} to="/">
+              Get Gear
             </Link>
           </li>
           <li className="mx-1">

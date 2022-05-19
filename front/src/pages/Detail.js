@@ -86,7 +86,8 @@ function Detail() {
           margin: "auto",
           background:'white',
           padding: '32px',
-          borderRadius: '5px'
+          borderRadius: '5px',
+          filter: "drop-shadow(0 0 0.5rem black)"
         }}>
           <Link to="/">Back to Available to Hire</Link>
 
