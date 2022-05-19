@@ -19,6 +19,8 @@ function Footer() {
             height: '100px'}}>
         © Brenton Weaver Designs Inc.
         <br></br>
+        I acknowledge the Traditional Owners and Custodians of the lands on which we work
+            and pay our respects to Indigenous Elders past, present and emerging.
         <br></br>
         <img style={{width:"40px", margin:"10px"}} src={github} alt="logo for github"></img>
         <img style={{width:"40px", margin:"10px"}} src={instagram} alt="logo for instagram"></img>
