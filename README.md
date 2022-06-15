@@ -43,7 +43,7 @@ The backend uses:
 
 The frontend uses:
 
-    🟢 REACT - React is the scaffolding for this application allowing 
+    🟢 REACT - React is the scaffolding for this application allowing it to dynamically update and building the html using reusable components.
     🟢 Material-UI/MUI - I would like to use this on more components moving forward but its a start!
     🟢 Custom CSS - Custom index.css file applied
     🟢 Bootstrap - mostly used for grid layout and managing breakpoints.
